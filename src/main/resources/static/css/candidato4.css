@@ -1,0 +1,26 @@
+.nav {
+  background: rgba(30, 29, 29, 0.7);
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+  float: left;
+}
+
+.nav ul {
+  list-style: none;
+  overflow: hidden; 
+}
+
+.nav ul li {
+  float: left;
+  font-size: 25px;
+}
+.nav ul li a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+.nav ul li:hover {
+  background: rgb(47, 47, 47);
+}

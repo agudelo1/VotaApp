@@ -1,0 +1,150 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <title>votApp v.11</title>
+    <meta charset="utf-8" content="Sistema de votacIones en línea, vote por su candidato de preferencia">
+    <link rel="stylesheet" th:href="@{/css/miEstilo.css}">
+	<link rel="stylesheet" th:href="@{/css/candidato4.css}">
+	<link rel="stylesheet" th:href="@{/css/bootstrap.css}">
+	<script type="text/javascript" th:src="@{/js/votapp.js}"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+
+    <header>
+
+       
+    </header>
+
+<body style="background-color:rgb(47, 47, 47)">
+
+    <div id="inicio" style="max-width: 50rem; margin-top: 10px;">
+        <nav class="nav justify-content-center">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#candidato">Candidato</a></li>
+                <li><a href="#obrasocial">Obras Sociales</a></l>
+
+            </ul>
+        </nav>
+    </div>
+
+    <center>
+        <div id="inicio" style="margin-top: 1.5rem;">
+            <img src="img/masallapagbanner.jpg" class="rounded mx-auto d-block" width="50%" height="40%"
+                style="margin-bottom: 80px" ;>
+        </div>
+    </center>
+    <center>
+        <div>
+            <h1 style="color: #F0F2F2"> PARTIDO MÁS ALLÁ</h1>
+            <h4 class="bg-transparent text-white">SOMOS LA SOLUCIÓN, PARA LA CORRUPCIÓN</h1>
+        </div>
+    </center>
+
+    <center>
+        <div class="alert alert-secondary" style="max-width: 50rem;">
+            <P>
+                “Sus voces están escuchándose y están demostrándole a nuestros ancestros que sus luchas no fueron en
+                vano.
+                Ahora nos queda una cosa más que debemos hacer: caminar hacia nuestro verdadero poder, que es el voto".
+                este es tu momento de alzar tu voz, y convertir las palabras en hechos contundentes. </P>
+        </div>
+    </center>
+    <center>
+        <div id="candidato" class="card" style="width: 25rem; margin-bottom: 2.5rem;">
+            <div class="card-header">
+                <h4>Jan Modaal</h4>
+            </div>
+            <center>
+                <img src="img/can31.png" class="card-img-top" alt="..." style="max-width: 150px;">
+            </center>
+            <div class="card-body">
+                <p class="card-text">Nacida en la ciudad de Ismaelia en 1919, nacida en una familia de abogados, desde
+                    joven activamente
+                    luchando por los derechos de las personas olvidadas del gobierno.</p>
+                <a th:href="@{/votaApp}" class="btn btn-outline-dark">VOTE AQUÍ POR EL CAMBIO</a>
+            </div>
+    </center>
+    <center>
+        <div class=" alert alert-secondary" style="max-width: 50rem;">
+            <blockquote class="blockquote text-center">
+                <p class="mb-0">“El arte de la conversación es el arte de escuchar y de ser escuchado.</p>
+                <footer class="blockquote-footer" style="margin:3px">"William Hazlitt" <cite title="Source Title"></cite>
+                </footer>
+            </blockquote>
+        </div>
+    </center>
+    <center>
+        <div class="card bg-light mb-3 text-dark" style="max-width: 35rem; margin-top: 50PX;">
+            <div class="card-header">OBRAS SOCIALES</div>
+        </div>
+    </center>
+
+    <center>
+
+        <div id="obrasocial" class="card-group" style="max-width: 80rem;">
+            <div class="card">
+                <img src="img/obra1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Mercados</h5>
+                    <p class="card-text">Comprometidos con la alimentacion de los niños en las escuelas.</p>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/obra2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Escuelas</h5>
+                    <p class="card-text">entregamos dotaciones completas a las entidades escolares para proyectar al
+                        futuro de los niños</p>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/obra3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Recreación</h5>
+                    <p class="card-text">adecuacion de parques y zonas verdes para el disfrute de la comunidad</p>
+
+                </div>
+            </div>
+        </div>
+    </center>
+
+
+    <center>
+
+        <div id="footer" class="card-group" style="max-width: 45rem; margin-top: 8rem;">
+            <div class="card" style="padding: 7px" ;>
+                <img src="img/dir.png" class="rounded mx-auto d-block" alt="..." width="30px">
+                <div class="card-body">
+                    <h5 class="card-title">Dirección: </h5>
+                    <p class="card-text">Calle de los lamentos 24 ISMAELIA</p>
+
+                </div>
+            </div>
+            <div class="card" style="padding: 7px" ;>
+                <img src="img/cel.png" class="rounded mx-auto d-block" width=30px>
+                <div class="card-body">
+                    <h5 class="card-title">Telefonos</h5>
+                    <p class="card-text">(1) 66X8525/(1) 666X522 </p>
+
+                </div>
+            </div>
+            <div class="card" style="padding: 7px" ;>
+                <img src="img/email.png" class="rounded mx-auto d-block" alt="..." width=45px>
+                <div class="card-body">
+                    <h5 class="card-title">Email</h5>
+                    <p class="card-text">jurid@partidomasalla.org</p>
+
+                </div>
+            </div>
+        </div>
+    </center>
+    <div style="margin: 25px;">
+    </div>
+
+</body>
+
+</html>

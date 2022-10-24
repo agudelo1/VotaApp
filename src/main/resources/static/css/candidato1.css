@@ -1,0 +1,384 @@
+@media(min-width:1000px) {
+    .allbody{
+        background-color: white;
+        width: 100%;
+        padding: 10px auto;
+
+    }
+    #encabezados {
+        background-color: rgb(255, 128, 0);
+    }
+
+    .estiloTabla {
+        width: 95%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 70px;
+        font-weight: bolder;
+    }
+
+    .logo {
+        width: 300px;
+        height: 250px;
+        margin-left: 100px;
+    }
+
+    nav {
+        margin: 20px auto;
+        width: 90%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+    }
+
+    #botonNav li {
+        display: inline-block;
+    }
+
+    #candidato {
+        margin: 20px auto;
+        width: 90%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #sobre {
+        margin: 120px;
+    }
+
+    .noticia {
+        text-align: justify;
+        margin: 10px;
+    }
+
+    #texto {
+        text-align: justify;
+        font-size: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    #imgCandidato {
+        width: 250px;
+        height: 270px;
+    }
+
+    #información {
+        margin: 40px;
+    }
+
+    .imgSucesos {
+        margin: 12px;
+        width: 300px;
+    }
+
+    .styleIcon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .gmail {
+        width: 32px;
+        height: 27px;
+    }
+
+    footer {
+        background-color: orangered;
+    }
+
+    #pie {
+        width: 100%;
+        margin-left: 40px;
+        font-weight: bolder
+    }
+
+    .logoSub {
+        float: right;
+        width: 300px;
+        margin-right: 100px;
+    }
+}
+@media(min-width:900px)and(max-width:1199px) {
+    .allbody{
+        background-color: rgb(226, 226, 226);
+        width: 95%;
+        padding: 10px auto;
+
+    }
+    #encabezado {
+        background-color: rgb(252, 255, 52);
+    }
+
+    .estiloTabla {
+        width: 75%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+
+    .logo {
+        width: 200px;
+        height: 125px;
+        margin-left: 100px;
+    }
+
+    nav {
+        margin: 20px auto;
+        width: 90%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+    }
+
+    #botonNav li {
+        display: inline-block;
+    }
+
+    #candidato {
+        margin: 20px auto;
+        width: 90%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #sobre {
+        margin: 120px;
+    }
+
+    .noticia {
+        text-align: justify;
+        margin: 10px;
+    }
+
+    #texto {
+        text-align: justify;
+        font-size: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    #imgCandidato {
+        width: 250px;
+        height: 270px;
+    }
+
+    #información {
+        margin: 30px;
+    }
+
+    .imgSucesos {
+        margin: 12px;
+        width: 300px;
+    }
+
+    .styleIcon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .gmail {
+        width: 27px;
+        height: 21px;
+    }
+
+    footer {
+        background-color: rgb(252, 255, 52);
+    }
+
+    #pie {
+        width: 100%;
+        margin-left: 40px;
+        font-weight: bolder
+    }
+
+    .logoSub {
+        float: right;
+        width: 300px;
+        margin-right: 100px;
+    }
+}
+@media(min-width:600px)and(max-width:899px) {
+    .allbody{
+        background-color: rgb(67, 185, 140);
+        width: 90%;
+        padding: 10px auto;
+
+    }
+    #encabezado {
+        background-color: rgb(117, 190, 250);
+    }
+
+    .estiloTabla {
+        width: 95%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 70px;
+        font-weight: bolder;
+    }
+
+    .logo {
+        width: 300px;
+        height: 250px;
+        margin-left: 100px;
+    }
+
+    nav {
+        margin: 20px auto;
+        width: 90%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+    }
+
+    #botonNav li {
+        display: inline-block;
+    }
+
+    #candidato {
+        margin: 20px auto;
+        width: 90%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #sobre {
+        margin: 120px;
+    }
+
+    .noticia {
+        text-align: justify;
+        margin: 10px;
+    }
+
+    #texto {
+        text-align: justify;
+        font-size: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    #imgCandidato {
+        width: 250px;
+        height: 270px;
+    }
+
+    #información {
+        margin: 40px;
+    }
+
+    .imgSucesos {
+        margin: 12px;
+        width: 300px;
+    }
+
+    .styleIcon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .gmail {
+        width: 32px;
+        height: 27px;
+    }
+
+    footer {
+        background-color: rgb(117, 190, 250);
+    }
+
+    #pie {
+        width: 100%;
+        margin-left: 40px;
+        font-weight: bolder
+    }
+
+    .logoSub {
+        float: right;
+        width: 300px;
+        margin-right: 100px;
+    }
+}
+@media(min-width:300px)and(max-width:599px) {
+    .allbody{
+        background-color: rgb(132, 181, 255);
+        width: 80%;
+        padding: 10px auto;
+
+    }
+    #encabezado {
+        background-color: rgb(234, 131, 255);
+    }
+
+    .estiloTabla {
+        width: 95%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        font-weight: bolder;
+    }
+
+    .logo {
+        width: 180px;
+        height: 110px;
+        margin-left: 100px;
+    }
+
+    nav {
+        margin: 20px auto;
+        width: 70%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+    }
+
+    #botonNav li {
+        display: inline-block;
+    }
+
+    #candidato {
+        margin: 20px auto;
+        width: 90%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #sobre {
+        margin: 120px;
+    }
+
+    .noticia {
+        text-align: justify;
+        margin: 10px;
+    }
+
+    #texto {
+        text-align: justify;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    #imgCandidato {
+        width: 200px;
+        height: 220px;
+    }
+
+    #información {
+        margin: 25px;
+    }
+
+    .imgSucesos {
+        margin: 120px;
+        width: 100px;
+    }
+
+    .styleIcon {
+        width: 10px;
+        height: 5px;
+    }
+
+    .gmail {
+        width: 20px;
+        height: 22px;
+    }
+
+    footer {
+        background-color: rgb(234, 131, 255);
+    }
+
+    #pie {
+        width: 80%;
+        margin-left: 20px;
+        
+    }
+
+    .logoSub {
+        float: right;
+        width: 100px;
+        margin-right: 100px;
+    }
+}

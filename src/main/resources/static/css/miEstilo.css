@@ -1,0 +1,59 @@
+.bodyClass {
+    width: 90%;
+    margin: 10px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+#encabezado{
+    width: 100%;
+    padding: 10px auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#titTab{
+    text-align: center;
+}
+
+#contenido{
+    width: 70%;
+    float: left;
+    margin: 2px auto;
+    padding: 10px auto;
+}
+
+#info{
+    width: 30%;
+    float: left;
+    margin: 2px auto;
+    padding: 10px auto;
+}
+
+.styleImg{
+	width:200px;
+    display: block;
+    margin: auto;
+}
+
+#conEst{
+    text-align: right;
+    color: brown;
+}
+
+.styleImgAn{
+    display: block;
+    margin: auto;
+    width: 200px;
+}
+
+.tbPer{
+    width: 65%;
+}
+
+#formReg,#conTable {
+	width: 60%;
+    
+    margin: 2px auto;
+    padding: 10px auto;
+}
+

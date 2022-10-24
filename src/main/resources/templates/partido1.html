@@ -1,0 +1,149 @@
+<htmlxmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <title>Partido Libertades</title>
+    <meta charset="UTF-8" content="Partidos de elección Sprint 2">
+    <link rel="stylesheet" th:href="@{/css/candidato1.css}">
+	<link rel="stylesheet" th:href="@{/css/bootstrap.css}">
+	<script type="text/javascript" th:src="@{/js/votapp.js}"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+</head>
+
+<body class="allbody">
+    <header id="encabezados">
+        <table border="0"class="estiloTabla">
+            <tr>
+                <td rowspan="3"><img class="logo" src="img\logoLibertades-removebg-preview.png"></td>
+                <td align="right" style="color:white;">Partido Libertades</td>
+            </tr>
+            <tr><td align="right" style="color:white;font-size: 30px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">"Un cambio de 360 grados"</td></tr>
+            <tr>
+                <td align="right" id="iconoSup"><img src="img\iconoFace-removebg-preview.png" class="styleIcon">&nbsp;<img
+                        src="img\iconoWhats-removebg-preview.png" class="styleIcon">
+                    <img src="img\iconoTwit.png" class="styleIcon">&nbsp;<img src="img\iconoInstag-removebg-preview.png" class="styleIcon">
+                </td>
+            </tr>
+        </table>
+    </header>
+    <nav>
+        <ul class="nav justify-content-end">
+           
+            <li class="nav-item">
+               
+                <a th:href="@{/votaApp}"><button type="button" class="btn btn-outline-secondary">Regresar</button></a><br>
+
+            </li>
+            
+        </ul>
+        <hr size="10px" color="orangered">
+        <br><br>
+    </nav>
+    <div id="candidato">
+        <table>
+            <tr>
+                <td rowspan="3"><img src="img\Captura-removebg-preview.png" id="imgCandidato">
+                <td align="center"style="font-size: 35px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Joe Blogs</td>
+            </tr>
+            <tr>
+                <td align="center" style="font-size: 22px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">"Un cambio de 360 grados"</td>
+            </tr>
+            <tr>
+                <td class="reseñaCandidato"
+                    style="font-size:25px;font-family:Verdana, Geneva, Tahoma, sans-serif; text-align: justify;">&nbsp;
+                    &nbsp;&nbsp;Nacido en 1916, en la ciudad de Tizio; recientemente cambió su residencia
+                    principal a Ciudad Capital.
+                    <br><br>&nbsp;
+                    Ex militar con conocimientos en salvamento médico. Ex presentador de programas de televisión
+                    y &nbsp;&nbsp;&nbsp;&nbsp;promotor de la seguridad armamentista. Nunca se postuló para un cargo
+                    político hasta
+                    ahora.
+                </td>
+            </tr>
+        </table><br><br>
+        <hr size="10px" color="orangered">
+    </div><br>
+    <table>
+        <tr>
+            <td>
+                <section id="sobre">
+                    <h1>Sobre el Partido Libertades</h1>
+                    <p id="texto" align="left">
+                        <br>Nuestro partido fue creado en el año 1890 a raíz de los problemas sociales y políticos que se
+                        venían presentando, con el de que fuera la alternativa que le permitiera a la sociedad expresar su voz.
+                        Esta filosofía del partido se ha mantenido a pesar de todos los cambios que hubieron y las personas
+                        que han entrado y salido de nuestro partido. Este partido se caracteriza por la trnsparencia en el
+                        manejo de los recursos, el compromiso con las sociedades, la educación, la economía y el medio ambiente.<br><br>
+                        Joe Bloggs (que es nuestro candidato), con su lema "un cambio de 360 grados"; se identifica y se acopla perfectamente con nuestro partido, además
+                        que entiende las problemáticas que atraviesa nuestra zona y está comprometido con alivianar esos males que
+                        vienen aquejando a la sociedad, teniendo en cuenta los diferentes puntos de vista.
+                    </p>
+                </section>
+            </td>
+            <td>
+            <aside id="información">
+                <table border="0">
+                    <tr>
+                        <td colspan="2">
+                            <h3 style="text-align:center">Sucesos</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="img\campañaCandidato.webp" class="imgSucesos"></td>
+                        <td class="noticia">
+                            01 de Octubre de 2022<br><br>
+                            <a href="">El candidato Joe Bloggs hace su campaña en su ciudad de nacimiento, teniendo una
+                                gran acogida de los pobladores.</a>
+                        </td>
+                    </tr><br>
+                    <tr>
+                        <td><img src="img\Sociedad.jpg" class="imgSucesos"></td>
+                        <td class="noticia">
+                            30 de Septiembre de 2022 <br><br>
+                            <a href="">Se realiza la campaña sociedad unidad, donde participan una gran cantidad de
+                                personas.</a>
+                        </td>
+                    </tr><br>
+                    <tr>
+                        <td><img src="img\cadenas-rotas-manos-concepto-de-la-libertad-89273230.jpg" width="200px" height=200px class="imgSucesos" ></td>
+                        <td class="noticia">29 de Septiembre de 2022 <br><br>
+                            <a href="">Se realiza la marcha "Libertad" donde una gran multitud de personas acude al
+                                llamado
+                                para
+                                exigir la libertad contra la corrupción.</a>
+                        </td>
+                    </tr>
+                </table>
+            </aside>
+        </td>
+        </tr>
+    </table>
+    <footer>
+        <table border="0" id="pie">
+            <tr>
+                <td><img src="img\iconoGmail-removebg-preview.png" class="gmail"></td>
+                <td style="color: white;">libertades@gmail.com</td>
+                <td rowspan="5"><img src="img\logoLibertades-removebg-preview.png" class="logoSub"></td>
+            </tr>
+            <tr>
+                <td><img src="img\iconoWhats-removebg-preview.png" class="styleIcon"></td>
+                <td style="color: white;">+57 3528598998</td>
+            </tr>
+            <tr>
+                <td><img src="img\iconoFace-removebg-preview.png" class="styleIcon"></td>
+                <td style="color: white;">PartidoLibertades2022</td>
+            </tr>
+            <tr>
+                <td><img src="img\iconoInstag-removebg-preview.png" class="styleIcon"></td>
+                <td style="color: white;">Partido_Libertades</td>
+            </tr>
+            <tr>
+                <td><img src="img\iconoTwit.png" class="styleIcon"></td>
+                <td style="color: white;">@PartidoLibertades</td>
+            </tr>
+        </table>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+  <title>Soñar Primero</title>
+    <meta charset="UTF-8">
+ 	<link rel="stylesheet" th:href="@{/css/bootstrap.css}">
+	<script type="text/javascript" th:src="@{/js/votapp.js}"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+	
+  
+</head>
+
+<body style="background-color:#F2F2F2;">
+
+
+        <!-- 4. Crear la Página de los partidos -->
+    <center>
+        <div style="border: 1px solid #F0F2F2;background-color: #D95F80;padding-top: 2%;padding-right: 10%;padding-bottom: 2%;padding-left: 10%;margin-bottom:1%;text-align: center;">
+        <h1 style="margin:0%;color:#F2F2F2;text-align:center;font-family: Monospace;font-size: 900%;text-indent: 0px;letter-spacing: 3px;">
+            SOÑAR PRIMERO</h1></div>
+            <img src="img/sñlogo3.png" width="35%" height="35%"  >
+            <h1 style="color:#A68D60;text-align:center;font-family: Monospace;font-size: 300%;">La mayor aventura que puedes pasar es vivir la vida de tus sueños.</h1>
+            <h1 style="color:#595959;text-align:center;font-family: Monospace;font-size: 250%;">(Oprah Winfrey)</h1>
+            
+    </center>
+    
+    <div style="border: 1px solid #F0F2F2;background-color: #D95F80;padding-top: 5%;padding-right: 10%;padding-bottom: 5%;padding-left: 10%;margin-top:1%;margin-bottom:5%;text-align: center;">
+        <P style="margin:0%;color:#F0F2F2;text-align:center;font-family: Monospace;font-size: 200%;text-indent: 50px;letter-spacing: 1%;">
+            Somos un partido político formado por soñadores que quieren ver el futuro como una meta a conseguir,
+            que a pesar de todas las adversidades siempre hay algo por trabajar y que todo lo que se puede soñar se puede materializar,<br>
+            VAMOS A CONSEGUIRLO, CON JANE TODO ES POSIBLE.</P></div>
+    <center>
+
+        <h1 style="margin:0%;color:#595959;text-align:center;font-family: Monospace;font-size: 700%;text-indent: 0px;letter-spacing: 3px;">JANE DOE</h1> 
+
+        <table align="center" border="1" style="margin:1%;">
+            
+            <tr>
+                <td width="350" style="border: 1px solid #F0F2F2;background-color: #A68D60;padding-top: 5%;padding-right: 10%;padding-bottom: 5%;padding-left: 10%;text-align: center;">
+                    <center><p style="color:#F0F2F2;text-align:center;font-family: Monospace;font-size: 150%;">
+                        Jane Mary Doe, nacida en 1925 en la hermosa ciudad de Zenda, viene de una larga familia de abogados pero es la primera política. <br><br>
+                        Ha trabajado por sus sueños y por los de su comunidad desde muy joven ya que desde el 
+                        colegio ha participado en organizaciones que buscan el bienestar común y el crecimiento social.
+                    </p></center>                                     
+                </td>
+                <td width="350" style="border: 1px solid #010326;background-color: #F0F2F2;padding-top: 10%;padding-right: 10%;padding-bottom: 5%;padding-left: 10%;margin-bottom:5%;text-align: center;">
+                    <center><img src="img/can11.png" width="100%" height="100%"  ></center>
+                                        
+                </td>
+            </tr>
+        </table>
+    <br>
+
+    <table align="center" border="1" style="margin:1%;">
+            
+        <tr>
+            
+            <td width="350" style="border: 1px solid #010326;background-color: #F0F2F2;padding-top: 10%;padding-right: 10%;padding-bottom: 5%;padding-left: 10%;margin-bottom:5%;text-align: center;">
+                <center><img src="img/can12.png" width="100%" height="100%"  ></center>
+                                    
+            </td>
+            <td width="350" style="border: 1px solid #F0F2F2;background-color: #A68D60;padding-top: 5%;padding-right: 10%;padding-bottom: 5%;padding-left: 10%;text-align: center;">
+                <center><p style="color:#F0F2F2;text-align:center;font-family: Monospace;font-size: 150%;">
+                    Jane Mary Doe, graduada en 1945 de la universidad de Zenda como abogada especializada en el Derecho Constitucional, ya que siempre buscó ayudar a la gente a conseguir sus sueños de una manera justa y siguiendo la ley. <br><br>
+                    Ha trabajado con instituciones estatales donde siempre se caracterizó por lograr siempre la excelencia y perseguir la corrupción.
+                </p></center>                                     
+            </td>
+        </tr>
+    </table>
+
+
+    <a th:href="@{/votaApp}"><button  style="background-color: #D95F80;border: none;color: white;padding: 2% 10%;text-align: center;text-decoration: none;display: inline-block;font-size: 200%;margin: 2% 6%;cursor: pointer;"
+    type="button" th:href="@{/votaApp}" >VOTAR POR JANE DOE</button> </a>
+     
+
+</body>
+
+</html>

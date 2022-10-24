@@ -1,0 +1,53 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+	<title>votApp</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/miEstilo.css}">
+	<link rel="stylesheet" th:href="@{/css/bootstrap.css}">
+</head>
+
+<body>
+	<div id="conTable">
+		<h2>Gestionar Votantes</h2><br>
+		<center>
+			<a th:href="@{/nuevoVotante}"><button type="button" class="btn btn-outline-secondary">Registrar Votante</button></a>
+			<a th:href="@{/votaApp}"><button type="button" class="btn btn-primary">Volver</button></a>
+		</center>
+		<br>
+		<table class="table table-striped">
+			<tr>
+				<td></td>
+				<td class="titulo">
+					<h5>Identificación</h5>
+				</td>
+				<td class="titulo">
+					<h5>Nombres y Apellidos</h5>
+				</td>
+				<td class="titulo">
+					<h5>Correo</h5>
+				</td>
+			</tr>
+			<tr th:each="votante:${votantes}">
+				<td>
+					<a th:href="@{/mostrarVotante/}+${votante.codVotante}"><img src="img/ver.png" width="23px"></a>
+					<a th:href="@{/editarVotante/}+${votante.codVotante}"><img src="img/editar.ico" width="15px"></a>
+					<a th:href="@{/borrarVotante/}+${votante.codVotante}"><img src="img/eliminar.ico" width="15px"></a>
+				</td>
+				<td class="textoTab">
+					<font th:text=${votante.identificacion}></font>
+				</td>
+				<td class="textoTab">
+					<font th:text="${votante.nombres} + ' ' + ${votante.apellidos}"></font>
+				</td>
+				<td class="textoTab">
+					<font th:text=${votante.correo}></font>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+
+</html>

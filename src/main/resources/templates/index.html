@@ -1,0 +1,155 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+	<title>votApp v.10</title>
+	<meta charset="utf-8" content="Sistema de votaciones en línea, vote por su candidato de preferencia">
+	<link rel="stylesheet" th:href="@{/css/miEstilo.css}">
+	<link rel="stylesheet" th:href="@{/css/candidato1.css}">
+	<link rel="stylesheet" th:href="@{/css/bootstrap.css}">
+	<script type="text/javascript" th:src="@{/js/votapp.js}"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+</head>
+
+<body class="bodyClass">
+	<div id="encabezado">
+		<!-- 1. Crear el Titulo de la Página -->
+		<img src="img/vote.png" width="750" height="450">
+		<h1>SISTEMA DE VOTACIONES EN LINEA</h1>
+		<font align="center" face="Verdana" color="#024A86" size="6">TODOS POR UN SISTEMA MAS JUSTO</font><br>
+
+	</div>
+
+	<div id="contenido">
+		<!-- 2. Crear la descripción de la Página -->
+
+		<p align="justify">
+			De acuerdo con el artículo de la Constitución Política, el ganador
+			será elegido por la mitad más uno de los votos que depositen los votantes. Si
+			ningún candidato obtiene dicha mayoría, se celebrará a las tres semanas siguientes una nueva
+			votación entre quienes ocupen los dos primeros lugares, se debe realizar la segunda vuelta.
+		</p>
+
+		<!-- 3. Crear la tabla de candidatos -->
+
+		<table class="table table-dark table-striped">
+			<thead>
+				<th id="titTab">Joe Bloggs</th>
+				<th id="titTab">Jane Doe</th>
+			</thead>
+			<tr>
+				<td width="350">
+					<center><img src="img/candidato1.png" class="styleImgAn"></center>
+					<center>
+						<p>
+							Candidato por el Partido "Libertades", nacido en la ciudad de Tizio en 1916.
+
+						</p>
+					</center>
+
+					<center>
+						<p>
+							"Un Cambio de 360 grados."
+						</p>
+					</center>
+					<br>
+					<center>
+						<button type="button" class="btn btn-outline-light"
+							onclick="javascript: votar(0);">Votar</button>
+						<a th:href="@{/partido1}"><img src="img/partidos-politicos.webp" width="150" height="40"></a>
+					</center>
+				</td>
+				<td width="350">
+					<center><img src="img/candidato2.png" class="styleImgAn"></center>
+					<center>
+						<p>
+							 Candidata por el Partido "Soñar Primero", nacida en la ciudad de Zenda en 1925
+
+						</p>
+					</center>
+
+					<center>
+						<p>
+							 "Lo único que está claro es la confusión."
+						</p>
+					</center>
+					<br>
+					<center>
+						<button type="button" class="btn btn-outline-light"
+							onclick="javascript: votar(1);">Votar</button>
+						<a th:href="@{/partido2}"><img src="img/partidos-politicos.webp" width="150" height="40"></a>
+					</center>
+				</td>
+			</tr>
+			<thead>
+				<th id="titTab"> Mario Rossi</th>
+				<th id="titTab">Jan Modaal </th>
+			</thead>
+			<tr>
+				<td width="350">
+					<center><img src="img/can4.png" class="styleImgAn"></center>
+					<center>
+						<p>
+							Candidato por el Partido "Memoria", nacido en la ciudad de Medellin en 1929
+
+						</p>
+					</center>
+
+					<center>
+						<p>
+							"Si trabajar siempre da sus frutos, que trabajen los árboles. "
+						</p>
+					</center>
+					<br>
+					<center>
+						<button type="button" class="btn btn-outline-light"
+							onclick="javascript: votar(2);">Votar</button>
+						<a th:href="@{/partido3}"><img src="img/partidos-politicos.webp" width="150" height="40"></a>
+					</center>
+				</td>
+				<td width="350">
+					<center><img src="img/can3.png" class="styleImgAn"></center>
+					<center>
+						<p>
+							Candidata por el Partido "Más allá", nacida en la ciudad de Ismaelia en 1919
+
+						</p>
+					</center>
+
+					<center>
+						<p>
+							"Para poder hablar es necesario decir palabras."
+						</p>
+					</center>
+					<br>
+					<center>
+						<button type="button" class="btn btn-outline-light"
+							onclick="javascript: votar(3);">Votar</button>
+						<a th:href="@{/partido4}"><img src="img/partidos-politicos.webp" width="150" height="40"></a>
+					</center>
+				</td>
+				
+			</tr>
+		</table>
+	</div>
+	<div id="info">
+		<br>
+		<img src="img/estadistica.jpeg" width="200px" height="200px" class="styleImg"><br>
+		<table class="tbPer" border="0" align="center">
+			<tr>
+				<td>
+					<button type="button" class="btn btn-outline-primary"
+						onclick="javascript: estadistica();">Resultados Consolidados</button>
+					<a th:href="@{/listaVotantes}"><button type="button" class="btn btn-outline-danger"> Registrar datos votantes </button></a>
+					
+				</td>
+			</tr>
+		</table><br><br>
+		<div id="conEst"></div><br><br>
+		<center><canvas id="grafica" width="200px" align="center"></canvas></center>
+	</div> 
+	
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+	<title>Editar Votante</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/miEstilo.css}">
+	<link rel="stylesheet" th:href="@{/css/bootstrap.css}">
+</head>
+
+<body class="bodyClass">
+	<div id="formReg">
+		<h2>Editar Votante</h2><br>
+		<form th:action="@{/saveVotante}" method="post" th:object=${votantes}>
+			<div class="mb-3">
+				<label for="labidentificacion" class="form-label">Identificacion:</label>
+				<input type="number" class="form-control" name="identificacion" id="identificacion"
+					aria-describedby="identificacionHelp" required th:value="*{identificacion}">
+			</div>
+			<div class="mb-3">
+				<label for="labnombres" class="form-label">Nombres:</label>
+				<input type="text" class="form-control" name="nombres" id="nombres" aria-describedby="nombresHelp"
+					required th:value="*{nombres}">
+			</div>
+			<div class="mb-3">
+				<label for="labnombres" class="form-label">Apellidos:</label>
+				<input type="text" class="form-control" name="apellidos" id="apellidos" aria-describedby="nombresHelp"
+					required th:value="*{apellidos}">
+			</div>
+			<label for="sexo" class="form-label">Sexo:</label><br>
+			<label class="form-check-label" for="sexo" th:if="*{sexo == 1}">
+		    <div class="form-check">
+				<input class="form-check-input" type="radio" name="sexo" id="sexo" value="1" checked>
+				<label class="form-check-label" for="sexo">
+					Femenimo
+				</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="sexo" id="sexo" value="2">
+				<label class="form-check-label" for="flexRadioDefault2">
+					Masculino
+				</label>
+			</div>
+			<div id="nombresHelp" class="form-text">Seleccione el sexo</div><br>
+			</label>
+
+			<label class="form-check-label" th:if="*{sexo == 2}">
+		        <div class="form-check">
+				<input class="form-check-input" type="radio" name="sexo" id="sexo" value="1" >
+				<label class="form-check-label" for="sexo">
+					Femenimo
+				</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="sexo" id="sexo" value="2" checked>
+				<label class="form-check-label" for="flexRadioDefault2">
+					Masculino
+				</label>
+			</div>
+			<div id="nombresHelp" class="form-text">Seleccione el sexo</div><br>
+			</label>
+
+			<div class="mb-3">
+				<label for="labnombres" class="form-label">Fecha de Nacimiento:</label>
+				<input type="date" class="form-control" name="fechaNac" id="fechaNac" aria-describedby="nombresHelp"
+					required th:value="*{fechaNac}">
+			</div>
+			<div class="mb-3">
+				<label for="labnombres" class="form-label">Fecha de Expedición:</label>
+				<input type="date" class="form-control" name="fechaExp" id="fechaExp" aria-describedby="nombresHelp"
+					required th:value="*{fechaExp}">
+			</div>
+			<div class="mb-3">
+				<label for="labnombres" class="form-label">Lugar de Nacimiento:</label>
+				<select class="form-select" aria-label="Default select example" name="lugarNac" id="lugarNac" required>
+					<option value="1" th:if="*{lugarNac == 1}">Bógota D.C</option>
+					<option value="2" th:if="*{lugarNac == 2}">Barranquilla</option>
+					<option value="3" th:if="*{lugarNac == 3}">Bucaramanga</option>
+					<option value="4" th:if="*{lugarNac == 4}">Calí</option>
+					<option value="5" th:if="*{lugarNac == 5}">Cartagena</option>
+					<option value="6" th:if="*{lugarNac == 6}">Cúcuta</option>
+					<option value="7" th:if="*{lugarNac == 7}">Medellín</option>
+					<option value="8" th:if="*{lugarNac == 8}">Santa Marta</option>
+				</select>
+			</div>
+			<div class="mb-3">
+				<label for="labnombres" class="form-label">Lugar de Residencia:</label>
+				<select class="form-select" aria-label="Default select example" name="lugarRec" id="lugarRec" required>
+					<option value="1" th:if="*{lugarRec == 1}" selected>Bógota D.C</option>
+					<option value="1" th:if="*{lugarRec != 1}">Bógota D.C</option>
+					<option value="2" th:if="*{lugarRec == 2}" selected>Barranquilla</option>
+					<option value="2" th:if="*{lugarRec != 2}">Barranquilla</option>
+					<option value="3" th:if="*{lugarRec == 3}" selected>Bucaramanga</option>
+					<option value="3" th:if="*{lugarRec != 3}">Bucaramanga</option>
+					<option value="4" th:if="*{lugarRec == 4}" selected>Cali</option>
+					<option value="4" th:if="*{lugarRec != 4}">Calí</option>
+					<option value="5" th:if="*{lugarRec == 5}" selected>Cartagena</option>
+					<option value="5" th:if="*{lugarRec != 5}">Cartagena</option>
+					<option value="6" th:if="*{lugarRec == 6}" selected>Cucuta</option>
+					<option value="6" th:if="*{lugarRec != 6}">Cúcuta</option>
+					<option value="7" th:if="*{lugarRec == 7}" selected>Medellin</option>
+					<option value="7" th:if="*{lugarRec != 7}">Medellín</option>
+					<option value="8" th:if="*{lugarRec == 8}" selected>Santa Marta</option>
+					<option value="8" th:if="*{lugarRec != 8}">Santa Marta</option>
+				</select>
+			</div>
+			<div class="mb-3">
+				<label for="labnombres" class="form-label">Teléfono:</label>
+				<input type="number" class="form-control" name="telefono" id="telefono" aria-describedby="nombresHelp"
+					required th:value="*{telefono}">
+			</div>
+			<div class="mb-3">
+				<label for="labnombres" class="form-label">Correo:</label>
+				<input type="email" class="form-control" name="correo" id="correo" aria-describedby="nombresHelp"
+					required th:value="*{correo}">
+			</div>
+			<input type="hidden" name="codVotante" id="codVotante" th:value="*{codVotante}">
+			<button type="submit" class="btn btn-outline-secondary">Editar</button>
+			<a th:href="@{/listaVotantes}"><button type="button" class="btn btn-primary">Volver</button></a>
+
+
+
+		</form>
+
+	</div>
+
+
+</body>
+
+</html>
